@@ -1,9 +1,21 @@
+'TYPO3.Neos.NodeTypes:TwoColumn':
+  abstract: TRUE
+
+'TYPO3.Neos.NodeTypes:ThreeColumn':
+  abstract: TRUE
+
+'TYPO3.Neos.NodeTypes:FourColumn':
+  abstract: TRUE
+
+'TYPO3.Neos.NodeTypes:Menu':
+  abstract: TRUE
+
 'SimplyAdmire.Neos.Foundation.NodeTypes:Row':
   superTypes: ['TYPO3.Neos:Content']
   ui:
     label: 'Row'
     icon: 'icon-align-justify'
-    group: 'structure'
+    group: 'foundation'
     inspector:
       groups:
         configuration:
@@ -27,7 +39,7 @@
   ui:
     label: 'Column'
     icon: 'icon-columns'
-    group: 'structure'
+    group: 'foundation'
     inspector:
       groups:
         configuration:

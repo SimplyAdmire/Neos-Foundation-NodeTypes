@@ -3,5 +3,5 @@ TYPO3:
     nodeTypes:
       groups:
         foundation:
-          label: 'Foundation'
-          position: 50
+          position: 500
+          label: 'Foundation Structure'

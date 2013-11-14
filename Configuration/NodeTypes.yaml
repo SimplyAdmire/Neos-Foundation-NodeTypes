@@ -1,0 +1,113 @@
+'SimplyAdmire.Neos.Foundation.NodeTypes:Row':
+  superTypes: ['TYPO3.Neos:Content']
+  ui:
+    label: 'Row'
+    icon: 'icon-align-justify'
+    group: 'structure'
+    inspector:
+      groups:
+        configuration:
+          label: 'Configuration'
+          position: 5
+  properties:
+    collapse:
+      type: boolean
+      ui:
+        label: 'Collapse row'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'configuration'
+  childNodes:
+    content:
+      type: 'TYPO3.Neos:ContentCollection'
+
+
+'SimplyAdmire.Neos.Foundation.NodeTypes:Column':
+  superTypes: ['TYPO3.Neos:Content']
+  ui:
+    label: 'Column'
+    icon: 'icon-columns'
+    group: 'structure'
+    inspector:
+      groups:
+        configuration:
+          label: 'Configuration'
+          position: 5
+        panel:
+          label: 'Panel'
+          position: 10
+  properties:
+    small:
+      type: string
+      ui:
+        label: 'Column size on small screen'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'configuration'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'Select a size'
+            values:
+              '':
+                label: ''
+              'small-2':
+                label: '2 / 12'
+              'small-4':
+                label: '4 / 12'
+              'small-6':
+                label: '6 / 12'
+              'small-8':
+                label: '8 / 12'
+              'small-10':
+                label: '10 / 12'
+              'small-12':
+                label: '12 / 12'
+    large:
+      type: string
+      ui:
+        label: 'Column size on larger screens'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'configuration'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'Select a size'
+            values:
+              '':
+                label: ''
+              'large-2':
+                label: '2 / 12'
+              'large-4':
+                label: '4 / 12'
+              'large-6':
+                label: '6 / 12'
+              'large-8':
+                label: '8 / 12'
+              'large-10':
+                label: '10 / 12'
+              'large-12':
+                label: '12 / 12'
+    panel:
+      type: boolean
+      ui:
+        label: 'Make this column a panel'
+        reloadIfChanged: true
+        inspector:
+          group: 'panel'
+    callout:
+      type: boolean
+      ui:
+        label: 'Add callout effect'
+        reloadIfChanged: true
+        inspector:
+          group: 'panel'
+    radius:
+      type: boolean
+      ui:
+        label: 'Add radius'
+        reloadIfChanged: true
+        inspector:
+          group: 'panel'
+  childNodes:
+    content:
+      type: 'TYPO3.Neos:ContentCollection'

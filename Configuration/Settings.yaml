@@ -1,0 +1,7 @@
+TYPO3:
+  Neos:
+    nodeTypes:
+      groups:
+        foundation:
+          label: 'Foundation'
+          position: 50

@@ -1,0 +1,14 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<neos:contentElement node="{node}" class="column {small} {large}">
+	<f:if condition="{panel}">
+		<f:then>
+			<div class="panel {f:if(condition:'{radius}', then:'radius')} {f:if(condition:'{callout}', then:'callout')}">
+				<ts:render path="content" />
+			</div>
+		</f:then>
+		<f:else>
+			<ts:render path="content" />
+		</f:else>
+	</f:if>
+</neos:contentElement>

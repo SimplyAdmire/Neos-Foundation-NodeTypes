@@ -1,0 +1,18 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+<neos:contentElement node="{node}">
+	<figure class="{f:if(condition: '{alignment}==\'center\'}', then: 'text-')}{f:if(condition: alignment, then: '{alignment}')}">
+		<f:render partial="Image" arguments="{
+			node: node,
+			image: image,
+			alternativeText: alternativeText,
+			title: title,
+			link: link,
+			hasCaption: hasCaption,
+			caption: caption,
+			maximumWidth: maximumWidth,
+			maximumHeight: maximumHeight,
+			imageClassName: imageClassName
+		}" />
+	</figure>
+	<neos:contentElement.editable property="text">{text -> f:format.raw()}</neos:contentElement.editable>
+</neos:contentElement>

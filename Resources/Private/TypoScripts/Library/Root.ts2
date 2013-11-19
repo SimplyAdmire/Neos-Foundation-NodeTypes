@@ -1,1 +1,11 @@
 include: resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/TypoScripts/Library/Prototype/Grid.ts2
+
+# Image TS Object
+prototype(TYPO3.Neos.NodeTypes:Image) {
+	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/Image.html'
+}
+
+# TextWithImage TS Object
+prototype(TYPO3.Neos.NodeTypes:TextWithImage) < prototype(TYPO3.Neos.NodeTypes:Image) {
+	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/TextWithImage.html'
+}

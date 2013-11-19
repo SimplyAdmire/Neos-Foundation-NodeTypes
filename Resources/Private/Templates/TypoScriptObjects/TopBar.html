@@ -1,23 +1,19 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
-<div class="nav-bar">
-	<div class="row collapse">
-		<div class="small-12 large-9 large-offset-3 columns">
-			<nav class="top-bar">
-				<ul class="title-area">
-					<li class="name"></li>
-					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-				</ul>
-				<section class="top-bar-section">
-					<!-- Left Nav Section -->
-					<ul class="left">
-						<f:render section="itemsList" arguments="{items: items}" />
-					</ul>
-				</section>
-			</nav>
-		</div>
-	</div>
-</div>
+
+<nav class="top-bar">
+	<ul class="title-area">
+		<li class="name"></li>
+		<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+		<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	</ul>
+	<section class="top-bar-section">
+		<!-- Left Nav Section -->
+		<ul class="left">
+			<f:render section="itemsList" arguments="{items: items}" />
+		</ul>
+	</section>
+</nav>
+
 
 <f:section name="itemsList">
 	<f:for each="{items}" as="item">

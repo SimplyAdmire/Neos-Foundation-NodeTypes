@@ -8,7 +8,7 @@ prototype(TYPO3.Neos.NodeTypes:TextWithImage) < prototype(TYPO3.Neos.NodeTypes:I
 	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/TextWithImage.html'
 }
 
-prototype(TYPO3.Neos.NodeTypes:Menu) < prototype(TYPO3.Neos:Menu) {
+prototype(TYPO3.Neos:Menu) {
 	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/TypoScriptObjects/TopBar.html'
 	entryLevel = ${q(node).property('startLevel')}
 	entryLevel.@process.1 = ${String.toInteger(value)}

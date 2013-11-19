@@ -1,11 +1,16 @@
 include: resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/TypoScripts/Library/Prototype/Grid.ts2
 
-# Image TS Object
 prototype(TYPO3.Neos.NodeTypes:Image) {
 	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/Image.html'
 }
 
-# TextWithImage TS Object
 prototype(TYPO3.Neos.NodeTypes:TextWithImage) < prototype(TYPO3.Neos.NodeTypes:Image) {
 	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/TextWithImage.html'
+}
+
+prototype(TYPO3.Neos.NodeTypes:Menu) < prototype(TYPO3.Neos:Menu) {
+	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/TypoScriptObjects/TopBar.html'
+	entryLevel = ${q(node).property('startLevel')}
+	entryLevel.@process.1 = ${String.toInteger(value)}
+	maximumLevels.@process.1 = ${String.toInteger(value)}
 }

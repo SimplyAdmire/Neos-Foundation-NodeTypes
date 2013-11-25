@@ -123,3 +123,39 @@
   childNodes:
     content:
       type: 'TYPO3.Neos:ContentCollection'
+
+'SimplyAdmire.Neos.Foundation.NodeTypes:Video':
+  superTypes: ['TYPO3.Neos:Content']
+  ui:
+    label: 'Video'
+    icon: 'icon-youtube-play'
+    group: 'general'
+    inspector:
+      groups:
+        configuration:
+          label: 'Video Settings'
+          position: 5
+  properties:
+    url:
+      type: string
+      ui:
+        label: 'Video URL'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'configuration'
+    width:
+      type: integer
+      defaultValue: 420
+      ui:
+        label: 'Width'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'configuration'
+    height:
+      type: integer
+      defaultValue: 315
+      ui:
+        label: 'Height'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'configuration'

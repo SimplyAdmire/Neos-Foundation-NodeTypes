@@ -14,3 +14,7 @@ prototype(TYPO3.Neos:Menu) {
 	entryLevel.@process.1 = ${String.toInteger(value)}
 	maximumLevels.@process.1 = ${String.toInteger(value)}
 }
+
+prototype(SimplyAdmire.Neos.Foundation.NodeTypes:Video) {
+	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/Video.html'
+}

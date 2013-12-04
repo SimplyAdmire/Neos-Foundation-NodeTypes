@@ -1,24 +1,16 @@
-prototype(SimplyAdmire.Neos.Foundation.NodeTypes:Row) < prototype(TYPO3.Neos:Template) {
+prototype(SimplyAdmire.Neos.Foundation.NodeTypes:Row) < prototype(TYPO3.Neos:ContentCollection) {
 	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/Row.html'
 	collapse = ${q(node).property('collapse')}
-	content = TYPO3.TypoScript:Collection {
-		collection = ${q(node).children('[instanceof TYPO3.Neos:ContentCollection]')}
-		itemRenderer = TYPO3.Neos:ContentCollection
-		itemName = 'node'
-	}
+	nodePath = 'main'
 }
 
-prototype(SimplyAdmire.Neos.Foundation.NodeTypes:Column) < prototype(TYPO3.Neos:Template) {
+prototype(SimplyAdmire.Neos.Foundation.NodeTypes:Column) < prototype(TYPO3.Neos:ContentCollection) {
+	nodePath = 'main'
 	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/Column.html'
 	small = ${q(node).property('small')}
 	large = ${q(node).property('large')}
 	panel = ${q(node).property('panel')}
 	radius = ${q(node).property('radius')}
 	callout = ${q(node).property('callout')}
-	content = TYPO3.TypoScript:Collection {
-		collection = ${q(node).children('[instanceof TYPO3.Neos:ContentCollection]')}
-		itemRenderer = TYPO3.Neos:ContentCollection
-		itemName = 'node'
-	}
 }
 

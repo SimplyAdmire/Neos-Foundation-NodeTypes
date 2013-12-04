@@ -11,7 +11,7 @@
   abstract: TRUE
 
 'SimplyAdmire.Neos.Foundation.NodeTypes:Row':
-  superTypes: ['TYPO3.Neos:Content']
+  superTypes: ['TYPO3.Neos:ContentCollection']
   ui:
     label: 'Row'
     icon: 'icon-align-justify'
@@ -29,13 +29,9 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'configuration'
-  childNodes:
-    content:
-      type: 'TYPO3.Neos:ContentCollection'
-
 
 'SimplyAdmire.Neos.Foundation.NodeTypes:Column':
-  superTypes: ['TYPO3.Neos:Content']
+  superTypes: ['TYPO3.Neos:ContentCollection']
   ui:
     label: 'Column'
     icon: 'icon-columns'
@@ -120,9 +116,6 @@
         reloadIfChanged: true
         inspector:
           group: 'panel'
-  childNodes:
-    content:
-      type: 'TYPO3.Neos:ContentCollection'
 
 'SimplyAdmire.Neos.Foundation.NodeTypes:Video':
   superTypes: ['TYPO3.Neos:Content']

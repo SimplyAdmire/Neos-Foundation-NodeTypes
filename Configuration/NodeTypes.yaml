@@ -152,3 +152,17 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'configuration'
+
+'TYPO3.Neos.NodeTypes:Headline':
+  superTypes: ['TYPO3.Neos:Content']
+  ui:
+    label: 'Headline'
+    icon: 'icon-file-text'
+  properties:
+    subheader:
+      type: boolean
+      ui:
+        label: 'Show as subheader'
+        reloadIfChanged: true
+        inspector:
+          group: 'visibility'

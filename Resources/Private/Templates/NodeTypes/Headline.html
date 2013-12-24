@@ -1,0 +1,11 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+<f:if condition="{subheader}">
+	<f:then>
+		<div class="subheader">
+			{neos:contentElement.editable(property: 'title')}
+		</div>
+	</f:then>
+	<f:else>
+		{neos:contentElement.editable(property: 'title')}
+	</f:else>
+</f:if>

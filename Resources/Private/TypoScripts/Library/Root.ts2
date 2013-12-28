@@ -4,7 +4,7 @@ prototype(TYPO3.Neos.NodeTypes:Image) {
 	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/Image.html'
 }
 
-prototype(TYPO3.Neos.NodeTypes:TextWithImage) < prototype(TYPO3.Neos.NodeTypes:Image) {
+prototype(TYPO3.Neos.NodeTypes:TextWithImage) {
 	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/TextWithImage.html'
 }
 
@@ -20,7 +20,7 @@ prototype(SimplyAdmire.Neos.Foundation.NodeTypes:Video) {
 }
 
 # Headline TS Object
-prototype(TYPO3.Neos.NodeTypes:Headline) < prototype(TYPO3.Neos.NodeTypes:Headline) {
+prototype(TYPO3.Neos.NodeTypes:Headline) {
 	templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/Headline.html'
 	subheader = ${q(node).property('subheader')}
 }

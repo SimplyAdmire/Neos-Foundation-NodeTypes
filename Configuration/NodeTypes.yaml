@@ -159,6 +159,19 @@
     label: 'Headline'
     icon: 'icon-file-text'
   properties:
+    title:
+      type: string
+      defaultValue: '<h1>Enter headline here</h1>'
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          'format':
+            'h1': TRUE
+            'h2': TRUE
+            'h3': TRUE
+            'removeFormat': TRUE
+          'link':
+            'a': TRUE
     subheader:
       type: boolean
       ui:

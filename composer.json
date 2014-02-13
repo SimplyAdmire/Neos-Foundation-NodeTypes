@@ -1,15 +1,15 @@
 {
-    "name": "simplyadmire/neos-foundation-nodetypes",
-    "type": "typo3-flow-package",
-    "description": null,
-    "version": null,
-    "require": {
-        "typo3/flow": "*",
-        "typo3/neos-nodetypes": "*"
-    },
-    "autoload": {
-        "psr-0": {
-            "SimplyAdmire\\Neos\\Foundation\\NodeTypes": "Classes"
-        }
-    }
+	"name": "simplyadmire/neos-foundation-nodetypes",
+	"type": "typo3-flow-package",
+	"description": null,
+	"version": null,
+	"require": {
+		"typo3/flow": "*",
+		"typo3/neos-nodetypes": "*"
+	},
+	"autoload": {
+		"psr-0": {
+			"SimplyAdmire\\Neos\\Foundation\\NodeTypes": "Classes"
+		}
+	}
 }

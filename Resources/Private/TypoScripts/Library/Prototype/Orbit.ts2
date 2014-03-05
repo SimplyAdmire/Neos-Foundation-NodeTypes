@@ -1,0 +1,22 @@
+prototype(SimplyAdmire.Neos.Foundation.NodeTypes:Orbit) {
+	@cache {
+		mode = 'uncached'
+		context {
+			0 = 'node'
+			1 = 'documentNode'
+		}
+	}
+
+	sectionName = 'main'
+	items = TYPO3.Neos:ContentCollection {
+		nodePath = 'main'
+		iterationName = 'iteration'
+		attributes.data-orbit = 'data-orbit'
+	}
+
+	prototype(TYPO3.Neos.NodeTypes:Image) {
+		templatePath = 'resource://SimplyAdmire.Neos.Foundation.NodeTypes/Private/Templates/NodeTypes/Orbit.html'
+		sectionName = 'item'
+		iteration = ${carouselItemsIteration}
+	}
+}

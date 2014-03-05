@@ -179,3 +179,14 @@
         reloadIfChanged: true
         inspector:
           group: 'visibility'
+
+'SimplyAdmire.Neos.Foundation.NodeTypes:Orbit':
+  superTypes: ['TYPO3.Neos:Content']
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+  ui:
+    label: 'Orbit Slider'
+    icon: 'icon-expand'
+    group: 'foundation'
+    inlineEditable: TRUE
